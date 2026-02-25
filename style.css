@@ -1,3 +1,19 @@
+    
+    
+.logo-text {
+ font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(139, 38, 53, 0.3);
+    
+    /* ADD THESE LINES */
+    position: absolute;
+    top: 40px;   /* Distance from the very top of the screen */
+    left: 100px; /* Aligns it horizontally with the main title */
+}
+    
+    
+    
     .center {
   display: flex;
   justify-content: center;
@@ -38,7 +54,7 @@
 .p3 {
   font-family: "Times New Roman", Times, serif;
   font-size: 100px;
-  background: linear-gradient(to top, rgb(87, 6, 6), rgb(238, 90, 90));
+  background: linear-gradient(to right, rgb(85, 7, 47), rgb(236, 130, 238));
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
@@ -48,23 +64,51 @@
         top: 300px; 
 }
 
+.date-badge {
+    
+  align-items: center;
+    position: absolute;
+    top: 150px;       /* Keep your current top position */
+    left: 100px;      /* Keep your current left position */
+    width: 250px;    /* Keep your current width */
+   background: #a38171;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+   
 
 
-    .container{
+    body{
         width: 100%;
         min-height: 100vh;
         padding: 5%;
-        background-image: linear-gradient(to bottom, rgb(249, 197, 197), rgb(232, 149, 113));
-        background-position: right;
+        background-image: linear-gradient(to top, rgb(249, 197, 197), rgb(251, 230, 211));
+        background-position: center;
         background-size: cover;
         display: flex;
     
        
     }
 
+    .header{
+        width: 60%;
+        max-width: 350px;
+        max-height: 50px;
+        background: rgb(255, 136, 132);
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        padding: 10px 20px;
+        position: absolute; 
+  
+    }
+
     .search{
         width: 60%;
-        max-width: 300px;
+        max-width: 350px;
         max-height: 50px;
         background: rgb(255, 136, 132);
         display: flex;
@@ -73,18 +117,195 @@
         padding: 10px 20px;
         position: absolute; 
         
-        right: 100px;         
+        top: 250px;
+        right: 100px;          
 }
 
     
 
-    .search input{
+    .search button{
         background: transparent;
         flex: 1;
         border: 0;
         outline: none;
         padding: 24px 20px;
-    
-
+        color : white;
+        font-family: libre baskerville, serif;
+        font-size: 40px;
 
     }
+
+    .srch{
+        width: 90%;
+        max-width: 450px;
+        max-height: 50px;
+        background: rgb(201, 105, 100);
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        padding: 10px 20px;
+        position: absolute; 
+        
+        top: 150px;
+        left: 10px;         
+}
+
+        .search button:hover{
+       
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        color : rgb(145, 90, 90);
+        font-family: libre baskerville, serif;
+        font-size: 40px;
+        top: 150px;
+
+    }
+
+    
+
+    .srch button{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        color : rgb(255, 255, 255);
+        font-family: libre baskerville, serif;
+        font-size: 40px;
+        top: 150px;
+
+    }
+
+        .srch button:hover{
+       
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        color : rgb(164, 93, 93);
+        font-family: libre baskerville, serif;
+        font-size: 40px;
+        top: 150px;
+
+    }
+
+
+.txt {
+    font-family: 'Libre Baskerville', serif;
+    color: #5a6268; /* Matches the soft gray in your reference */
+    position: absolute;
+    
+    /* 1. Reset Positioning */
+    top: 550px;
+        /* Align with your main title */
+    right: 590px;     /* IMPORTANT: This disables the right-side anchoring */
+
+    /* 2. Fix the "Squish" */
+    width: 100%;      /* Let it take up most of the horizontal space */
+    max-width: 800px; /* But don't let it get TOO long on giant monitors */
+    
+    font-size: 40px;;
+
+    /* 3. Styling */
+    line-height: 1.8;
+    text-align: left;
+    font-size: 2.2rem;
+}
+
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    transition: transform 0.2s;
+}
+
+.btn-primary {
+    background-color: rgba(159, 63, 63, 0.798);
+    color: black;
+    border: 1px solid rgba(0,0,0,0.1);
+    top: 150px;
+    right: 60px;
+    position: absolute;
+    max-width: 1000px;
+    width: 30%;
+
+}
+
+.btn-secondary {
+    background-color: rgb(255, 179, 179);
+    color: black;
+    border: 1px solid rgba(0,0,0,0.1);
+    top: 250px;
+    right: 60px;
+    position: absolute;
+    max-width: 1000px;
+    width: 30%;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    color: white;
+
+
+}
+
+.inf{
+    bottom: 300px;
+    right: 350px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.symbol{
+     font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--maroon-dark);  
+}
+
+.all{
+    bottom: 155px;
+    right: 175px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.al{
+     font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--maroon-dark);  
+}
+
+.sh{
+    bottom: 300px;
+    right: 65px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.on{
+     font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--maroon-dark);  
+}
